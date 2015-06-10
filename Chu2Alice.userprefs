@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Desktop\PetitPazzle\Assets\Script\SimpleSprite.cs">
+    <Files>
+      <File FileName="Assets\Scripts\RoomManager.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\Desktop\PetitPazzle\Assets\Script\SimpleSpriteGUI.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\Desktop\PetitPazzle\Assets\Script\GameControl.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\Desktop\PetitPazzle\Assets\Script\PazzleControl.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\Desktop\PetitPazzle\Assets\Script\PieceControl.cs" Line="8" Column="12" />
+      <File FileName="..\..\..\Desktop\PetitPazzle\Assets\Script\RetryButtonControl.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\Desktop\PetitPazzle\Assets\Script\SimpleSprite.cs" Line="28" Column="36" />
+      <File FileName="Assets\Scripts\MenuManager.cs" Line="26" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
