@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ItemManager : MonoBehaviour {
 
+	public System.Collections.Generic.List<string> ItemType = { Table, Chair, Sofa, Other };
+
 	public System.Collections.Generic.List<Sprite> ItemTableList;
 	public System.Collections.Generic.List<Sprite> ItemChairList;
 	public System.Collections.Generic.List<Sprite> ItemSofaList;
@@ -19,11 +21,4 @@ public class ItemManager : MonoBehaviour {
 	
 	}
 
-	void ItemListMaker(){
-
-		System.Collections.Generic.List<GameObject> PlayerItemList;
-
-		Sprite spriteImage = Resources.Load("Sprite/test", typeof(Sprite)) as Sprite;
-		new GameObject("Sprite").AddComponent<SpriteRenderer>().sprite = spriteImage;
-	}
 }

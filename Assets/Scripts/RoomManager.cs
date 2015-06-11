@@ -3,7 +3,10 @@ using System.Collections;
 
 public class RoomManager : MonoBehaviour {
 
-	private bool isMakeover = false;
+	public bool isInterior = false; // もようがえ中かどうか
+
+	public System.Collections.Generic.ArrayList<GameObject> PlayerItemList; // 自分が持っているアイテム
+
 
 	// Use this for initialization
 	void Start () {
