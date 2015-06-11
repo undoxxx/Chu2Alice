@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GachaManager : MonoBehaviour {
 
@@ -18,33 +19,16 @@ public class GachaManager : MonoBehaviour {
 
 		Random rand = new Random();
 		
-		// ItemListに入ってるスプライトからランダムで選ぶよ
+		// ItemSpriteListに入ってるスプライトからランダムで選ぶよ
+		Sprite gachaResultItem = Mathf.FloorToInt ( (Random.value * 100) + 1f ) % ItemManager.ItemSpriteList.Count;
+		Debug.Log (gachaResultItem);
 
-			// まずどのタイプのアイテムか選ぶよ
-
-			int choseType = Mathf.FloorToInt ((Random.value * 100) + 1f) % ItemManager.ItemType.Count;
-			Debug.Log (choseType);
-		
-			// 何番目にするか選ぶよ
-
-			ItemTableList;
-			ItemChairList;
-			ItemSofaList;
-			ItemOtherList;
-
-			int choseNum = Mathf.FloorToInt ((Random.value * 100) + 1f) % ItemManager.ItemType.Count;
-			Debug.Log (choseNum);
-		
-		// 画面に結果を表示するよ
+		// 画面にガチャ結果を表示するよ
 		
 		// uGUIで作ると簡単らしいよ
-			
-		// 出てきたのをPrefab化するよ
 
 		// RoomManagerのPlayerItemListに追加するよ
-		/*
-			Sprite spriteImage = Resources.Load("Sprite/test", typeof(Sprite)) as Sprite;
-			new GameObject("Sprite").AddComponent<SpriteRenderer>().sprite = spriteImage;
-		*/
+		RoomManager.PlayerItemList.Add (gachaResultItem);
 	}
+
 }

@@ -2,10 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GachaManager.cs">
     <Files>
-      <File FileName="..\..\Unity\Chu2Alice\Assets\Scripts\MenuManager.cs" Line="26" Column="1" />
-      <File FileName="Assets\Scripts\RoomManager.cs" Line="8" Column="89" />
-      <File FileName="Assets\Scripts\GachaManager.cs" Line="31" Column="17" />
-      <File FileName="Assets\Scripts\ItemManager.cs" Line="5" Column="2" />
+      <File FileName="Assets\ItemManager.cs" Line="20" Column="3" />
+      <File FileName="..\..\Unity\Chu2Alice\Assets\Scripts\MenuManager.cs" Line="27" Column="1" />
+      <File FileName="Assets\Scripts\RoomManager.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\GachaManager.cs" Line="34" Column="2" />
+      <File FileName="..\..\..\Google ドライブ\スマホ・ゲーム開発科\00.受講生発表\03安藤\Unity4\2D_tsumutsumu_ボタンだけuGUI\2Dtsumutsumu\Assets\Scripts\PieceManager.cs" Line="13" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
