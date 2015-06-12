@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class GachaManager : MonoBehaviour {
 
@@ -28,18 +29,46 @@ public class GachaManager : MonoBehaviour {
 		RoomManager.PlayerItemList.Add (gachaResultItem);
 		Debug.Log ("Gacha RoomManager.PlayerItemList.Add (gachaResultItem);");
 
+		GachaResult ();
+		Debug.Log ("GachaResult();");
+
 		Debug.Log ("Gacha end");
 	}
 
-	// 画面にガチャ結果を表示するよ
+	// ガチャ結果画面を表示するよ
 	public void GachaResult () {
 
 		Debug.Log ("GachaResult start");
 
+		// GachaResultのImageItemをガチャ結果に入れ替えるよ
+
+		
+		// GachaResultを表示するよ
+		GameObject.Find("GachaResult").GetComponent<Canvas>().enabled = true;
+
+		/*
+		this.gameObject.SetActive(true);
+			InitIcons();
+			boad.Close();
+			explanationImage.gameObject.SetActive(!achievement.IsOpenedOnceAchievement);
+
+		foreach (Transform child in canvas.transform){
+			if(child.name == "Button1"){
+				Button button1 = child.gameObject.GetComponent<Button>();
+				button1.gameObject.SetActive (true);
+			}
+		}
+		*/
 
 
 		Debug.Log ("GachaResult start");
 
+	}
+
+	//ガチャ結果画面を閉じる
+	public void Close()
+	{
+		this.gameObject.SetActive(false);
 	}
 
 }
