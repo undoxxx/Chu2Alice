@@ -18,7 +18,7 @@ public class GachaManager : MonoBehaviour {
 	public void Gacha () {
 
 		// ItemSpriteListに入ってるスプライトからランダムで選ぶよ
-		int selectSprite = Mathf.FloorToInt ( (Random.value * 100) + 1f ) % ItemManager.ItemSpriteList.Count;
+		int selectSprite = Mathf.FloorToInt ( (Random.value * 100) + 1f ) % ItemManager.ItemSpriteList.Length;
 		Sprite gachaResultItem = ItemManager.ItemSpriteList[selectSprite];
 		Debug.Log (gachaResultItem);
 
