@@ -17,17 +17,29 @@ public class GachaManager : MonoBehaviour {
 	// ガチャ回すよ
 	public void Gacha () {
 
+		Debug.Log ("Gacha start");
+
 		// ItemSpriteListに入ってるスプライトからランダムで選ぶよ
-		int selectSprite = Mathf.FloorToInt ( (Random.value * 100) + 1f ) % ItemManager.ItemSpriteList.Length;
-		Sprite gachaResultItem = ItemManager.ItemSpriteList[selectSprite];
+		int selectSprite = Mathf.FloorToInt ( (Random.value * 100) + 1f ) % ItemManager.itemSprites.Length;
+		Sprite gachaResultItem = ItemManager.itemSprites[selectSprite];
 		Debug.Log (gachaResultItem);
 
-		// 画面にガチャ結果を表示するよ
-		
-		// uGUIで作ると簡単らしいよ
-
-		// RoomManagerのPlayerItemListに追加するよ
+		// PlayerItemListに追加するよ
 		RoomManager.PlayerItemList.Add (gachaResultItem);
+		Debug.Log ("Gacha RoomManager.PlayerItemList.Add (gachaResultItem);");
+
+		Debug.Log ("Gacha end");
+	}
+
+	// 画面にガチャ結果を表示するよ
+	public void GachaResult () {
+
+		Debug.Log ("GachaResult start");
+
+
+
+		Debug.Log ("GachaResult start");
+
 	}
 
 }

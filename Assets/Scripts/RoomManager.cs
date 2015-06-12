@@ -11,11 +11,18 @@ public class RoomManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		PlayerItemList = new List<Sprite>();
+		//Debug.Log ("RoomManager "+PlayerItemList.Count);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void Interior () {
+
+		isInterior = true;
+
 	}
 }
