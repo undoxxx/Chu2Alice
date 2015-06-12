@@ -6,12 +6,11 @@ using UnityEngine.UI;
 public class GachaManager : MonoBehaviour {
 
 	Sprite gachaResultItem; // ガチャ結果
-	Image _ImageItem;
+	public Image _ImageItem;
+	int selectSprite;
 
 	// Use this for initialization
 	void Start () {
-
-		_ImageItem = (Image)FindObjectOfType<Image> ("ImageItem");
 
 	}
 	
@@ -26,7 +25,7 @@ public class GachaManager : MonoBehaviour {
 		Debug.Log ("Gacha start");
 
 		// ItemSpriteListに入ってるスプライトからランダムで選ぶよ
-		int selectSprite = Mathf.FloorToInt ( (Random.value * 100) + 1f ) % ItemManager.itemSprites.Length;
+		selectSprite = Mathf.FloorToInt ( (Random.value * 100) + 1f ) % ItemManager.itemSprites.Length;
 		gachaResultItem = ItemManager.itemSprites[selectSprite];
 		Debug.Log (gachaResultItem);
 
@@ -46,11 +45,11 @@ public class GachaManager : MonoBehaviour {
 		Debug.Log ("GachaResult start");
 
 		// GachaResultのImageItemをガチャ結果に入れ替えるよ
-		_ImageItem.GetComponent<Image>().sprite = gachaResultItem;
+		_ImageItem.sprite = ItemManager.itemSprites[selectSprite];
 		Debug.Log ("GachaResult GachaResultのImageItemをガチャ結果に入れ替えるよ");
 
 		// GachaResultを表示するよ
-		//GameObject.Find("GachaResult").GetComponent<Canvas>().enabled = true;
+		GameObject.Find("Canvas-Gacha").GetComponent<Canvas>().enabled = true;
 
 
 		Debug.Log ("GachaResult end");
