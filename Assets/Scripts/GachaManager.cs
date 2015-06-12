@@ -5,9 +5,14 @@ using UnityEngine.UI;
 
 public class GachaManager : MonoBehaviour {
 
+	Sprite gachaResultItem; // ガチャ結果
+	Image _ImageItem;
+
 	// Use this for initialization
 	void Start () {
-	
+
+		_ImageItem = (Image)FindObjectOfType<Image> ("ImageItem");
+
 	}
 	
 	// Update is called once per frame
@@ -22,7 +27,7 @@ public class GachaManager : MonoBehaviour {
 
 		// ItemSpriteListに入ってるスプライトからランダムで選ぶよ
 		int selectSprite = Mathf.FloorToInt ( (Random.value * 100) + 1f ) % ItemManager.itemSprites.Length;
-		Sprite gachaResultItem = ItemManager.itemSprites[selectSprite];
+		gachaResultItem = ItemManager.itemSprites[selectSprite];
 		Debug.Log (gachaResultItem);
 
 		// PlayerItemListに追加するよ
@@ -41,34 +46,20 @@ public class GachaManager : MonoBehaviour {
 		Debug.Log ("GachaResult start");
 
 		// GachaResultのImageItemをガチャ結果に入れ替えるよ
+		_ImageItem.GetComponent<Image>().sprite = gachaResultItem;
+		Debug.Log ("GachaResult GachaResultのImageItemをガチャ結果に入れ替えるよ");
 
-		
 		// GachaResultを表示するよ
-		GameObject.Find("GachaResult").GetComponent<Canvas>().enabled = true;
-
-		/*
-		this.gameObject.SetActive(true);
-			InitIcons();
-			boad.Close();
-			explanationImage.gameObject.SetActive(!achievement.IsOpenedOnceAchievement);
-
-		foreach (Transform child in canvas.transform){
-			if(child.name == "Button1"){
-				Button button1 = child.gameObject.GetComponent<Button>();
-				button1.gameObject.SetActive (true);
-			}
-		}
-		*/
+		//GameObject.Find("GachaResult").GetComponent<Canvas>().enabled = true;
 
 
-		Debug.Log ("GachaResult start");
+		Debug.Log ("GachaResult end");
 
 	}
 
-	//ガチャ結果画面を閉じる
-	public void Close()
-	{
-		this.gameObject.SetActive(false);
+	// ガチャ結果画面を非表示にするよ
+	public void GachaResultAway () {
+
 	}
 
 }
