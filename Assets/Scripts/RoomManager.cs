@@ -6,7 +6,7 @@ public class RoomManager : MonoBehaviour {
 
 	public bool isInterior = false; // 今もようがえ中？
 
-	public List<Sprite> PlayerItemList; // プレイヤーが持っているアイテム
+	public static List<Sprite> PlayerItemList; // プレイヤーが持っているアイテム
 
 
 	// Use this for initialization
