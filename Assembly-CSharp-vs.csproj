@@ -46,7 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Canvas-GachaManager.cs" />
+     <Compile Include="Assets\Scripts\CanvasGachaManager.cs" />
      <Compile Include="Assets\Scripts\GachaManager.cs" />
      <Compile Include="Assets\Scripts\GachaResultManager.cs" />
      <Compile Include="Assets\Scripts\ItemManager.cs" />
