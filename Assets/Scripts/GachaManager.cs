@@ -55,10 +55,4 @@ public class GachaManager : MonoBehaviour {
 		Debug.Log ("GachaResult end");
 
 	}
-
-	// ガチャ結果画面を非表示にするよ
-	public void GachaResultAway () {
-
-	}
-
 }

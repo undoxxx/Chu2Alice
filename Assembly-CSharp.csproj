@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CanvasGachaManager.cs" />
      <Compile Include="Assets\Scripts\GachaManager.cs" />
-     <Compile Include="Assets\Scripts\GachaResultManager.cs" />
      <Compile Include="Assets\Scripts\ItemManager.cs" />
      <Compile Include="Assets\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Scripts\RoomManager.cs" />
